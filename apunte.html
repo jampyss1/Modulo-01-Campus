@@ -4,19 +4,31 @@
     <head>
         <meta charset ="UTF-8" />
         <meta name = "viewport" content="width=device-width,initial-scale=1"> <!--Ivestigar bie esto en un futuro con las clases-->
-        <title> Mi primer pagina web UwU</title> 
+        <title> Mi primer pagina web UwU</title>
+        
+        <!--Para que aplique en todo el documento estas configuraciones
+        <style>
+          body{
+            background-color: antiquewhite;
+            color: blue;
+          }
+        </style>
+      -->
     </head>
 
     <!--Esto se va a mostrar en la pagina web-->
     <body>
-      <h1>Hola Mundo!!!</h1>
+      <h1>APUNTES</h1>
       <!--Como poner una imagen y videos con -> src  
         alt se usa para darle una descripcion -->
-      <img src = "https://i.pinimg.com/736x/7d/9b/a0/7d9ba05ce9903f07028021bef691aca9.jpg" alt="Foto de ASA MITAKA8" /> 
+      <img src = "https://i.pinimg.com/736x/7d/9b/a0/7d9ba05ce9903f07028021bef691aca9.jpg" width="100" alt="Foto de ASA MITAKA8" /> 
 
       <!--Poner hipervinculo a laguna otra  pagina 
         target = "_blank" Hace que el hipervivnulo habra en una nueva ventana y no en la misma --> 
-      <a href="https://google.com" target="_blank"> Ir a Google </a> 
+      <a href="https://google.com" target="_blank"> Ir a Google </a>
+  
+      <a href="https://www.instagram.com/jampyss/" target="_blank"> IG_jampyss </a>
+
 
       <!-- ATributos con su Valor-->
       <p>Pon texto o algo</p>
@@ -69,6 +81,58 @@
                 -Se usa para estilizar pquenias partes de texto o contenido dentro de una linea.
                 -No forza un nuevo salto de linea
           -->
+        <h2>Uso de FORMULARIOS</h2>
+          <!--FORMULARIO-->
+        <form>
+
+          <!--Textpo Normal-->
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <!--Correo electromico -->
+          <label for="correo">Correo:</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+          <!--Contrasenia -->
+          <label for="pass">Contraseña:</label>
+          <input type="password" id="pass" name="pass" placeholder="Tu contraseña" required>
+
+          <!--numeros-->
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad">
+
+          <!-- opciones de ua eleccion-->
+          <p>Género:</p>
+          <input type="radio" name="genero" value="masculino"> Masculino
+          <input type="radio" name="genero" value="femenino"> Femenino
+
+         <!-- Casillas de eleccion-->
+          <p>Intereses:</p>
+          <input type="checkbox" name="interes" value="programacion"> Programación
+          <input type="checkbox" name="interes" value="diseño"> Diseño
+
+          <!--LIsta desplegable-->
+          <label for="pais">País:</label>
+          <select id="pais" name="pais">
+          <option value="mexico">México</option>
+          <option value="españa">España</option>
+          <option value="japon">Japon</option>
+          </select>
+
+          <!--Campo de texto largo-->
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+
+          <!-- Botón de enviar -->
+          <button type="submit">Enviar</button>
+
+        </form>
+
+      <!-- in line tampoco se recomienda esta manera, para esto abrir un archivo .css 
+
+      <h2 style="color:indianred">Integracion con CSS</h2>
+      <p style="font-size: 14px;">Cambio de tamaño de letra</p> 
+      -->
     </body>
 
 </html>

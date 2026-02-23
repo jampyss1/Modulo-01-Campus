@@ -5,16 +5,23 @@
         <meta charset ="UTF-8" />
         <meta name = "viewport" content="width=device-width,initial-scale=1">
         <title> JAMPYSS </title>
+        <!--Se hace la conexion con CSS-->
+        <link rel="stylesheet" href="stylesCV.CSS">
     </head>
     
     <body>
         <header>
-            <section class="name-JuanP"> 
+            <section class="name"> 
                 <h1>JUAN PABLO MORALES VEGA</h1>
-                <p>Jampys</p>
+                <p>--Jampyss--</p>
 
-                <img src="https://i.pinimg.com/736x/7d/9b/a0/7d9ba05ce9903f07028021bef691aca9.jpg" width="150" alt="">
+                <img class="asaGato" src="https://i.pinimg.com/736x/7d/9b/a0/7d9ba05ce9903f07028021bef691aca9.jpg" alt="">
 
+                <!--Prueba para conectar al archivo de apuntes-->
+                <br>
+                <a href="apunte.html" target="_blank">Mi primer pagina web (sin diseño)</a>
+                <br>
+                <a href="prueb.html" target="_blank">Primer intento de usar CSS xd</a>  
             </section>
             
             <nav>
@@ -26,18 +33,23 @@
 
         <main>
 
-            <section id="sobre-mi">
+            <section id="sobreMi">
                 <h2>Acerca de mi</h2>
-                <p>Hola me llamo Juan Pablo Morales Vega y estoy aprendiendo programación web con mi profe :) </p>
+                <p>Hola me llamo Juan Pablo Morales Vega y estoy aprendiendo programación web con mi sensei super Cool :) </p>
+                    
+                    <br>
+                    <a href="https://www.instagram.com/jampyss/" target="_blank">IG:jampyss</a>
 
+                <img class="perfil" src="https://i.imgur.com/Xb2eWWM.jpeg" alt="">
             </section>
 
         <section id="educacion">
-            <h2>educacion</h2>
+            <h2>TRAYECTORIA</h2>
 
             <!-- <ul> lista desordenada-->
             <ul>
                 <li>Escuela Superior de Cómputo-ESCOM</li>
+                <img id="escom" src="https://imgs.search.brave.com/J88ow5-tyCIgFVjqzSVBv51ziPdtaocCjB7UFw3zOok/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZXNjb20uaXBuLm14/L2ltYWdlcy9sb2dv/RVNDT01CbGFuY28u/cG5n"alt="">
                 <p>Ciencia de Datos</p>
                 <p>2025 - Presente</p>
             
@@ -59,7 +71,7 @@
             <p>Algo para decirme</p>
 
             <form>
-                <label form="name">Nombre: </label>
+                <label for="name">Nombre: </label>
                 <input type="text" id="name" name="nombre" placeholder="Escribe tu nombre" required>
                 
                 <label for="correo">Correo:</label>

@@ -1,0 +1,86 @@
+/*Dar el estilo a todo el documento*/
+* {
+    background-color: blanchedalmond; /*Coolor de fondo*/
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; /*grosor de letra*/
+    text-align: center; /*posicion de las cosas*/
+    font-style: italic; /*Diagonal*/
+}
+
+
+/* Da el estilo a todas las etiquetas*/
+
+    section{
+        color:rgb(188, 208, 11);
+    }
+
+    /*Selector por id*/
+
+    #mundo {
+        color: red;
+    }
+
+
+    /*Mediante una class*/
+    .section02 {
+        font-size: 19px;
+        color: rgb(212, 24, 190);
+    }
+
+    .card{
+
+    }   
+
+    .card__title{
+        color: green;
+    }
+
+    title{
+        color: red;
+    }
+
+/***********************************************s*/
+.card__button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 85;
+}
+
+.card__button--primary{
+    background-color: green;
+}
+
+.card__button--danger{
+    background-color: brown;
+}
+
+p{
+    color: blue; 
+    font-size: 28px;
+}
+
+.section{
+    width: 50%;
+    height: 100%; /*tamanio de la caja*/
+    padding: 20px;
+    margin: 10px;
+    border: rgb(130, 24, 24) 1px solid;
+    
+    background-image: url('https://i.pinimg.com/736x/c0/92/78/c092781faac5e07a361410121dfd82a4.jpg');
+    /*background-size: cover;*/
+    /*background-position: center; */
+    background-repeat: no-repeat;
+}
+
+img{ /*Borde, tamnios y degradado*/
+    width: 25%;
+    border: red 8px solid;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgb(141, 38, 192);
+
+    filter: blur(1px);
+    filter: brightness(120%);
+    filter: contrast(100);
+}
