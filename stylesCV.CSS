@@ -30,8 +30,10 @@
     color: rgb(255, 102, 0)
 }
 .perfil{
+    width: 15%;
     display: block;
     margin: 0 auto;
+
 }
 
 #escom{
